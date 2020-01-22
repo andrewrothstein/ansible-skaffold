@@ -1,0 +1,7 @@
+---
+# vars file for skaffold
+skaffold_platform: '{{ skaffold_os }}-{{ skaffold_arch }}'
+skaffold_url: '{{ skaffold_mirror }}/{{ skaffold_ver }}/skaffold-{{ skaffold_platform }}'
+skaffold_checksum: '{{ skaffold_checksums[skaffold_ver][skaffold_platform] }}'
+skaffold_ver_exe: '{{ skaffold_install_dir }}/skaffold-{{ skaffold_platform }}-{{ skaffold_ver }}'
+skaffold_link: '{{ skaffold_install_dir }}/skaffold'

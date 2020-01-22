@@ -1,0 +1,26 @@
+---
+- name: resolve platform specific vars
+  include_vars: '{{ item }}'
+  with_first_found:
+    - files:
+        - '{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml'
+        - '{{ ansible_distribution }}.yml'
+        - '{{ ansible_os_family }}.yml'
+      skip: true
+      paths:
+        - '{{ role_path }}/vars'
+- name: download skaffold {{ skaffold_ver }}
+  become: yes
+  become_user: root
+  get_url:
+    url: '{{ skaffold_url }}'
+    dest: '{{ skaffold_ver_exe }}'
+    checksum: '{{ skaffold_checksum }}'
+    mode: 0755
+- name: link skaffold
+  become: yes
+  become_user: root
+  file:
+    src: '{{ skaffold_ver_exe }}'
+    dest: '{{ skaffold_link }}'
+    state: link
