@@ -22,8 +22,8 @@ dl()
 
 dlver () {
     local ver=$1
-    printf "  '%s':\n" $ver
+    printf "  %s:\n" $ver
     dl $ver linux amd64
 }
 
-dlver ${1:-v1.11.0}
+dlver ${1:-v1.12.0}

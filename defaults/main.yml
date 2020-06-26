@@ -1,41 +1,44 @@
 ---
 # defaults file for skaffold
-skaffold_ver: v1.11.0
+skaffold_ver: v1.12.0
 skaffold_os: linux
 skaffold_arch: amd64
 skaffold_mirror: https://storage.googleapis.com/skaffold/releases
 skaffold_install_dir: /usr/local/bin
 skaffold_checksums:
-  'v1.2.0':
+  v1.2.0:
     # https://storage.googleapis.com/skaffold/releases/v1.2.0/skaffold-linux-amd64
     linux-amd64: sha256:8c435b3faab09f697724f4ae48bb0cf203ae8490c431db35329674ef2aab5660
-  'v1.3.1':
+  v1.3.1:
     # https://storage.googleapis.com/skaffold/releases/v1.3.1/skaffold-linux-amd64
     linux-amd64: sha256:ab5b4b832e63add8795cdecdd59f89055a8d0bd625de3e59ace918ecb25db27b
-  'v1.4.0':
+  v1.4.0:
     # https://storage.googleapis.com/skaffold/releases/v1.4.0/skaffold-linux-amd64
     linux-amd64: sha256:36691f2df2afaa5b4820b1d6fc0f5c0a489ff203a340698ed5b7cd81ee47cc66
-  'v1.5.0':
+  v1.5.0:
     # https://storage.googleapis.com/skaffold/releases/v1.5.0/skaffold-linux-amd64
     linux-amd64: sha256:c00e8dc2c5ebd31b8dad7fb2160a1be2dc1f74585f9c3799782889298e6eca27
-  'v1.6.0':
+  v1.6.0:
     # https://storage.googleapis.com/skaffold/releases/v1.6.0/skaffold-linux-amd64
     linux-amd64: sha256:cc77c74ba468af62f4bcb6305186618184db4aab05dfdd9db3b8c673ae55da36
-  'v1.7.0':
+  v1.7.0:
     # https://storage.googleapis.com/skaffold/releases/v1.7.0/skaffold-linux-amd64
     linux-amd64: sha256:f4d6e91902c3c195901c132ffc2b918486e8b5d1807fef8236e9659c9a6ab2f9
-  'v1.8.0':
+  v1.8.0:
     # https://storage.googleapis.com/skaffold/releases/v1.8.0/skaffold-linux-amd64
     linux-amd64: sha256:ffcc601a58c5ee97c83d1189eb4112bce9d21576dd6ce28bb35f848ab6b45f05
-  'v1.9.1':
+  v1.9.1:
     # https://storage.googleapis.com/skaffold/releases/v1.9.1/skaffold-linux-amd64
     linux-amd64: sha256:6078dbaa83dcfbeeef4ebdce0f6cfeff510cc34b6f3156b32b256d02a74973e5
-  'v1.10.0':
+  v1.10.0:
     # https://storage.googleapis.com/skaffold/releases/v1.10.0/skaffold-linux-amd64
     linux-amd64: sha256:b0e5972fa5e86eb2aab61c834c0b65646cc21120fe13d59871d9a5fd5a71197f
-  'v1.10.1':
+  v1.10.1:
     # https://storage.googleapis.com/skaffold/releases/v1.10.1/skaffold-linux-amd64
     linux-amd64: sha256:bf61ae490e2f36dfafb638fabab2dd14d0023c8f5563b76f0821e18f41d29eb7
-  'v1.11.0':
+  v1.11.0:
     # https://storage.googleapis.com/skaffold/releases/v1.11.0/skaffold-linux-amd64
     linux-amd64: sha256:cb23d5c984b8da74112409c4fc959e2b8078ab69dc68d2a2c3d8ff900b28f964
+  v1.12.0:
+    # https://storage.googleapis.com/skaffold/releases/v1.12.0/skaffold-linux-amd64
+    linux-amd64: sha256:be5e115ba9d1a3703deb968d1adb0c040e970f7eac1b7c1f1313df5a37c5f817
