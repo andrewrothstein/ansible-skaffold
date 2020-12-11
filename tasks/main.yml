@@ -9,7 +9,7 @@
       skip: true
       paths:
         - '{{ role_path }}/vars'
-- name: download skaffold {{ skaffold_ver }}
+- name: downloading {{ skaffold_url }}
   become: yes
   become_user: root
   get_url:
@@ -17,7 +17,7 @@
     dest: '{{ skaffold_ver_exe }}'
     checksum: '{{ skaffold_checksum }}'
     mode: 0755
-- name: link skaffold
+- name: linking {{ skaffold_link }} to {{ skaffold_ver_exe }}
   become: yes
   become_user: root
   file:
