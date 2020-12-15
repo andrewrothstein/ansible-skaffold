@@ -26,4 +26,4 @@ dlver () {
     dl $ver linux amd64
 }
 
-dlver ${1:-v1.17.0}
+dlver ${1:-v1.17.2}
