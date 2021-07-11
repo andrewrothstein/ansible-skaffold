@@ -1,6 +1,7 @@
 andrewrothstein.skaffold
 =========
-[![Build Status](https://travis-ci.org/andrewrothstein/ansible-skaffold.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-skaffold)
+ithub.com/andrewrothstein/ansible-skaffold/actions/workflows/build.yml/badge.svg)
+
 
 Installs [skaffold](https://skaffold.dev/).
 
