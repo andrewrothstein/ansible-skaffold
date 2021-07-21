@@ -1,6 +1,6 @@
 ---
 # defaults file for skaffold
-skaffold_ver: v1.28.0
+skaffold_ver: v1.28.1
 skaffold_os: linux
 skaffold_arch: amd64
 skaffold_mirror: https://storage.googleapis.com/skaffold/releases
@@ -93,3 +93,6 @@ skaffold_checksums:
   v1.28.0:
     # https://storage.googleapis.com/skaffold/releases/v1.28.0/skaffold-linux-amd64
     linux-amd64: sha256:af026788ff6b5fe111a12753dec724d2bdbfd301bb9fe2feafa518b4007f2faa
+  v1.28.1:
+    # https://storage.googleapis.com/skaffold/releases/v1.28.1/skaffold-linux-amd64
+    linux-amd64: sha256:88b0fe2adf07c13a0b9e12e9875a4e41befe90d9b8237ebd8a9efb6cb7473348
