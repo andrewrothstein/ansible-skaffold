@@ -1,5 +1,7 @@
 ---
 # vars file for skaffold
+skaffold_os: '{{ ansible_system | lower }}'
+skaffold_arch: '{{ skaffold_arch_map[ansible_architecture] }}'
 skaffold_platform: '{{ skaffold_os }}-{{ skaffold_arch }}'
 skaffold_url: '{{ skaffold_mirror }}/{{ skaffold_ver }}/skaffold-{{ skaffold_platform }}'
 skaffold_checksum: '{{ skaffold_checksums[skaffold_ver][skaffold_platform] }}'
