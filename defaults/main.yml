@@ -1,6 +1,6 @@
 ---
 # defaults file for skaffold
-skaffold_ver: v2.3.1
+skaffold_ver: v2.4.0
 skaffold_arch_map:
   aarch64: arm64
   arm64: arm64
@@ -209,3 +209,12 @@ skaffold_checksums:
     linux-amd64: sha256:dd252b19a762a1cd9929f9ce0a55ae43877004b1c80e119324a66ffb093ee8c6
     # https://storage.googleapis.com/skaffold/releases/v2.3.1/skaffold-linux-arm64
     linux-arm64: sha256:88e8107bfcbee7ab2738211e265ca27bfee4b2562bc29b2a6f11a53b08789876
+  v2.4.0:
+    # https://storage.googleapis.com/skaffold/releases/v2.4.0/skaffold-darwin-amd64
+    darwin-amd64: sha256:c300def2488a2bf3bf3953dc7755f6d42bc4b1414e284d53c6a6a4cb96a41f52
+    # https://storage.googleapis.com/skaffold/releases/v2.4.0/skaffold-darwin-arm64
+    darwin-arm64: sha256:f72c2a3601ac27bfeb7be5f63806e0af5f02a3d1222c073ae09044c5b772db75
+    # https://storage.googleapis.com/skaffold/releases/v2.4.0/skaffold-linux-amd64
+    linux-amd64: sha256:efc46ff26a208acd7f42446a0868543e95897f7424ae1af0da06165dbdb46aad
+    # https://storage.googleapis.com/skaffold/releases/v2.4.0/skaffold-linux-arm64
+    linux-arm64: sha256:634d4dd4a6d5cec3b7386ead368808e446a4b6c3050380c369b026afb5040df4
