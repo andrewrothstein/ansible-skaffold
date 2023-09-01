@@ -29,4 +29,4 @@ dlver () {
     dl $ver linux arm64
 }
 
-dlver ${1:-v2.6.2}
+dlver ${1:-v2.7.0}
