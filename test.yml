@@ -1,10 +1,14 @@
 ---
-- hosts: all
-  roles:
-  - role: '{{ playbook_dir }}'
+- name: Testing andrewrothstein.skaffold
+  hosts: all
   tasks:
-  - command: /usr/local/bin/skaffold version
-    register: skaffold_test_output
-  - name: skaffold version
-    debug:
-      msg: '{{ skaffold_test_output.stdout }}'
+    - name: Installing andrewrothstein.skaffold
+      ansible.builtin.include_role:
+        name: '{{ playbook_dir }}'
+    - name: Executing 'skaffold version'
+      ansible.builtin.command: /usr/local/bin/skaffold version
+      changed_when: false
+      register: skaffold_test_output
+    - name: Output from 'skaffold version'
+      ansible.builtin.debug:
+        msg: '{{ skaffold_test_output.stdout }}'
